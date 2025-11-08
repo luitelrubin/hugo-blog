@@ -12,13 +12,14 @@ theme = "blog-theme"
     email = "info@rubinluitel.com.np"
     opengraph = true
     dateFormat = "Mon, Jan 2, 2006"
-    
+
     sharefacebook = true
     sharetwitter = true
     sharelinkedin = true
-    
+
 [Params.Author]
       name = "Rubin"
+
 [Permalinks]
     post = "/:year/:month/:day/:contentbasename/"
 
@@ -34,6 +35,11 @@ theme = "blog-theme"
   weight = 1
 
   [[menu.main]]
+  name = "Resume"
+  url = "/page/resume/"
+  weight = 2
+
+  [[menu.main]]
   name = "About"
   url = "/page/about/"
-  weight = 2
+  weight = 3
