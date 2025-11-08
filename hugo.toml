@@ -1,7 +1,6 @@
 baseurl = "/"
 title = "Home"
 theme = "blog-theme"
-
 [Params]
     mainSections = ["post"]
     intro = true
@@ -17,7 +16,9 @@ theme = "blog-theme"
     sharefacebook = true
     sharetwitter = true
     sharelinkedin = true
-
+    
+[Params.Author]
+      name = "Rubin"
 [Permalinks]
     post = "/:year/:month/:day/:contentbasename/"
 
