@@ -1,3 +1,38 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = "/"
+title = "Home"
+theme = "blog-theme"
+
+[Params]
+    mainSections = ["post"]
+    intro = true
+    headline = "Rubin Luitel's"
+    description = "Thoughts And Reflections"
+    github = "https://github.com/luitelrubin"
+    twitter = "https://twitter.com/luitelrubin"
+    facebook = "https://facebook.com/luitelrubin"
+    email = "info@rubinluitel.com.np"
+    opengraph = true
+    dateFormat = "Mon, Jan 2, 2006"
+    
+    sharefacebook = true
+    sharetwitter = true
+    sharelinkedin = true
+
+[Permalinks]
+    post = "/:year/:month/:day/:contentbasename/"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[menu]
+
+  [[menu.main]]
+  name = "Blogs"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "About"
+  url = "/page/about/"
+  weight = 2
